@@ -1,0 +1,28 @@
+body {
+  background-color: #5f5e61;
+}
+body * {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  width: 400px;
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block head %}
+
+<title>Youtube Web Scrap</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}" />
+{% endblock %} {% block body %}
+
+<main>
+  <h1>
+    Click button to start scrapping! Paste link of youtube channel video tab
+    link
+  </h1>
+  <p>Sample link is already added</p>
+  <div class="form">
+    <form action="/scrap" method="POST">
+      <input
+        type="text"
+        name="content"
+        id="content"
+        value="https://www.youtube.com/@PW-Foundation/videos"
+      />
+      <input type="submit" value="Start Scraping" />
+    </form>
+  </div>
+</main>
+
+{% endblock %}

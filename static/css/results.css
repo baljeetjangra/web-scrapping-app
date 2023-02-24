@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container {
+  margin: 25px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}

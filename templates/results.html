@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block head %}
+<title>Results</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/results.css')}}" />
+{% endblock %} 
+{% block body %}
+<main>
+  <!-- Video urls -->
+  <h1 class="header">Results</h1>
+  
+    {% for i in range(data['Youtube Urls']|length) %}
+		<div class="container">
+			<img width="300" height="150" src={{ data['Thumbnails'][i] }} target="_blank"/>
+			<div style="padding-left: 20px;">
+
+				<a class="link" href={{ data['Youtube Urls'][i] }} target="_blank">{{ data['Titles'][i] }}</a>
+				<p>{{ data['Views'][i] }}</p>
+				<p>{{ data['Upload Time'][i] }}</p>
+			</div>
+		</div>
+		{% endfor %}
+    
+ 
+</main>
+{% endblock %}
